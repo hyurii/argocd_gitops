@@ -1,0 +1,14 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/hyurii/argocd_gitops
+    targetRevision: HEAD
+    path: app
+  destination:
+    server: https://kubernetes.default.svc
