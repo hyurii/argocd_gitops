@@ -21,3 +21,5 @@ spec:
           image: hyurii3/nginx-private:v0.1.2
           ports:
             - containerPort: 80
+      imagePullSecrets:
+        - name: dockerconfigjson

@@ -1,0 +1,2 @@
+# token from hub.docker
+# k create secret docker-registry dockerconfigjson -n example3 --docker-server="https://index.docker.io/v1/" --docker-username=<username> --docker-password=<token> --docker-email=<email>
