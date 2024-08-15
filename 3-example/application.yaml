@@ -5,11 +5,11 @@ metadata:
   name: my-app-example-3
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.example2.io
+    - resources-finalizer.gprojekt.com/argocd-example3
 spec:
   project: default
   source:
-    repoURL: https://github.com/hyurii/argocd_gitops.git
+    repoURL: git@github.com:hyurii/argocd_gitops.git
     targetRevision: HEAD
     path: environments/private
   destination:
