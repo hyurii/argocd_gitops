@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/hyurii/argocd_gitops.git
     targetRevision: HEAD
-    path: app
+    path: environments/staging/app
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
